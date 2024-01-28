@@ -1,7 +1,7 @@
 ### Project Title
 
 repository to practice HTML5 & CSS. Pinterest Clone Landing Page(no JS)
-Goals: Make the most similar to the Pinterest  Clone.
+Goals: Make the most similar  Pinterest  Clone.
 
 ## 🛠 Skills
 
