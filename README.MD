@@ -10,7 +10,7 @@ Goals:
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/T25GmyV8/temp-Imagex-X6-Ic9.jpg)
+![App Screenshot](https://i.postimg.cc/Njwqqp2b/temp-Image-Rd-HWke.jpg)
 
 ## Tech Stack
 
