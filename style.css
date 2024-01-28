@@ -54,7 +54,7 @@
   align-items: center;
   min-width: 1221;
   height: 80px;
-  background-color: var(--background_bais);
+  /* background-color: var(--background_bais); */
 }
 
 /*!navbar-pinterest  */
@@ -63,7 +63,7 @@
   align-items: center;
   min-width: 1189px;
   height: 56px;
-  background-color: var(--background_light_black);
+  /* background-color: var(--background_light_black); */
 }
 
 /*! pinterest logo wrapper */
@@ -73,9 +73,10 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  border: 1px solid red;
-  margin-inline: 1rem;
+  /* border: 1px solid red; */
+  margin-inline-start: 1rem;
 }
+
 .wrapper_logo:hover {
   background-color: var(--background_light_gray);
   border-radius: 50%;
@@ -87,4 +88,48 @@
   height: 24px;
 }
 
+/* ! nav links wrapper */
+.nav_links_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  min-height: 48px;
+}
+/* ! nav links  */
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #ec0404; */
+  list-style: none;
+}
+/* ! links inside nav */
 
+#home,
+#explore,
+#create {
+  min-height: 48px;
+  min-width: 77px;
+}
+#home:focus,
+#explore:focus,
+#create:focus {
+  background-color: #111111;
+  height: 48px;
+  width: 77px;
+  color: var(--text_white);
+  border-radius: 24px;
+}
+
+.nav_links > a {
+  text-decoration: none;
+  color: var(--text_black);
+  font-size: 16px;
+  padding: 0 16px;
+}
+/* li:focus,
+.nav_links > a:focus {
+  background: var(--background_black);
+  border-radius: 24px;
+  color: var(--text_white);
+} */
