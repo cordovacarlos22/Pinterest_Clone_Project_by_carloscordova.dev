@@ -54,11 +54,13 @@
   flex-wrap: wrap;
   margin-top: 0.2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   min-width: 100%;
   height: 80px;
   /* background-color: var(--background_bais); */
 }
+
+
 
 #navbar-pinterest {
   display: flex;
@@ -193,4 +195,36 @@
 }
 
 
+/* MediasQueries */
 
+/* Extra small devices (phones, 320px and less) */
+@media only screen and (min-width: 320px) {
+
+}
+
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+    }
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+   
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+ 
+}
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1200px) {
+
+}
+@media only screen and (min-width: 1000px){
+
+}
