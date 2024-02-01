@@ -133,7 +133,7 @@
 /* ! form input  finder  wrapper  */
 .form_wrapper {
   display: flex;
-  min-width: 1350px;
+  min-width: 1200px;
   height: 48px;
   padding-left: 16px;
 }
@@ -192,6 +192,30 @@
 
 .notifications{
   width: 7rem;
+}
+
+
+
+
+
+/* section{
+  display: inline-flex;
+  max-height: 236px;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  
+} */
+.card-img{
+ display: inline-grid;
+ grid-template-columns: (auto-fit,minmax(236px));
+ min-height: 236px;
+ width: auto;
+  height: 100%;
+}
+
+.truck{
+  max-height: 236px;
 }
 
 
