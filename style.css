@@ -199,8 +199,8 @@ main {
   margin: 1em auto;
   text-align: center;
   
-  background-color: red;
-  columns: 240px;
+  /* background-color: red; */
+  columns: 236px;
   
   padding: 1rem 0;
 }
