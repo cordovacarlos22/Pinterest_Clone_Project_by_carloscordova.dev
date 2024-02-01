@@ -200,17 +200,33 @@ main {
   text-align: center;
   
   /* background-color: red; */
-  columns: 236px;
+  columns: 240px;
   
   padding: 1rem 0;
 }
 
 
 .card-img {
-  
+  position: relative;
   margin-bottom:1rem ;
+  z-index: -1;
   
 }
+
+.hoover-img{
+  position: absolute;
+  width: 236px;
+  height: 450px;
+  z-index: 2;
+  background-color: orange;
+  opacity: 50%;
+  display: none;
+}
+
+.hoover-img:hover{
+  display: show;
+}
+
 
 /* MediasQueries */
 
