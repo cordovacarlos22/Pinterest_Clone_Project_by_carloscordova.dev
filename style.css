@@ -237,7 +237,7 @@
   z-index: 2;
 }
 
-.app__work-hover {
+.app__work-hover:hover {
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 0.1s step-end;
   opacity: 100%;
