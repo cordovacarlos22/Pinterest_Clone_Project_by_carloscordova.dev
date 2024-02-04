@@ -53,10 +53,10 @@
 .wrapper_nav {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0.2rem;
+  margin-top: 0.2rem auto;
   align-items: center;
   justify-content: space-around;
-  min-width: 100%;
+  min-width: 100vw;
   height: 80px;
   /* background-color: var(--background_bais); */
 }
@@ -64,7 +64,7 @@
 #navbar-pinterest {
   display: flex;
   align-items: center;
-  min-width: 1189px;
+  /* min-width: 1189px; */
   height: 56px;
 }
 
@@ -131,7 +131,7 @@
 /* ! form input  finder  wrapper  */
 .form_wrapper {
   display: flex;
-  min-width: 1200px;
+  max-width: 1200px;
   height: 48px;
   padding-left: 16px;
 }
@@ -289,22 +289,65 @@
 
 /* Extra small devices (phones, 320px and less) */
 @media only screen and (min-width: 320px) {
+    .form_wrapper {
+  
+  min-width: 100px;
+  
+}
+.finder{
+  width: 1px;
+}
+
 }
 
 /* Small devices (vertical tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .form_wrapper {
+  
+  margin: 1rem auto;
+  
+}
+
+.finder{
+  width: 80%;
+}
+
 }
 
 /* Medium devices (horizontal tablets, 768px and above) */
 @media only screen and (min-width: 768px) {
+    .form_wrapper {
+  
+  min-width: 100px;
+  
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .form_wrapper {
+  
+  min-width: 150px;
+  
+}
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .form_wrapper {
+  
+  min-width: 500px;
+  
+}
 }
 
 /* Extra large devices (Large laptops and desktops, 1200px and above) */
 @media only screen and (min-width: 1200px) {
+   .form_wrapper {
+  
+  min-width: 900px;
+  
 }
-@media only screen and (min-width: 1000px) {
 }
