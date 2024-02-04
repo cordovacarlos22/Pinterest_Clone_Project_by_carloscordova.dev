@@ -45,6 +45,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /*! navigation  wrapper */
@@ -106,8 +107,7 @@
 #home,
 #explore,
 #create {
-  font-size: 1.1rem;
-  font-weight: bolder;
+  font-size: 1rem;
   min-height: 48px;
   min-width: 77px;
 }
@@ -237,7 +237,7 @@
   z-index: 2;
 }
 
-.app__work-hover:hover {
+.app__work-hover {
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 0.1s step-end;
   opacity: 100%;
@@ -247,10 +247,11 @@
   margin: 1rem auto;
   margin-inline-end: 1rem;
   position: relative;
-  max-width: 60px;
-  min-height: 48px;
+  max-width: 75px;
+  max-height: 48px;
   background-color: var(--background_candy_red);
   border-radius: 24px;
+  text-align: center;
 }
 
 .save_btn:hover {
@@ -259,6 +260,29 @@
 .save_btb-title {
   color: var(--text_white);
   padding: 1rem;
+}
+
+.btn_container-share {
+  
+  position: absolute;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 1rem;
+  bottom: 0;
+  margin: 1rem auto ;
+  padding: 5px ;
+  
+}
+
+.share_btn,
+.more_btn{
+  opacity: 50%;
+}
+
+.share_btn:hover,
+.more_btn:hover{
+  opacity: 100%;
 }
 
 /* MediasQueries */

@@ -7,6 +7,11 @@
   <title>Pinterest Clone</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -34,20 +39,24 @@
       <form class="form_wrapper">
         <input name="finder" id="finder" class="finder" type="search" placeholder="Search">
       </form>
-      <!-- ! notifications,messages & profile logo  wrapper -->
+      <!-- ! notifications,messages & profile logo  wrapper container -->
       <div class="profile_wrapper">
+        <!-- ! notifications icon container -->
         <div id="notifications">
           <a href="#" target="_blank" referrerpolicy="no-referrer"><img class="notifications"
               src="./img//notification_icon.svg" alt="notification bell"></a>
         </div>
+        <!-- ! message icon container -->
         <div id="message">
           <a href="#" target="_blank" referrerpolicy="no-referrer"><img class="messege" src="./img//message_icon.svg"
               alt=" messages icon"></a>
         </div>
+        <!-- ! profile container -->
         <div id="profile-img">
           <a href="#" target="_blank" referrerpolicy="no-referrer"><img class="profile-img"
               src="./img//profile_icon.svg" alt="profile picture"></a>
         </div>
+        <!-- ! arrow menu container -->
         <div id="arrow_menu">
           <img class="arrow_menu" src="./img/arrow_icon.svg" alt="arrow menu">
         </div>
@@ -57,19 +66,29 @@
       <h1>main container </h1>
     </main> -->
   </header>
-
+ <!-- !  main content  -->
   <main class="main_container">
+
+  <!-- ! card  main container -->
     <div class="card-img app_flex">
+      <!-- ! img container and hover  -->
       <div class="app__work-img app_flex">
         <img src="./img/image 1.png" alt="cat">
+        <!--! save btb  main container -->
         <div class="app__work-hover ">
+            <!--! save btb  container -->
           <div class="save_btn">
-            <h4 class="save_btb-title">Save</h4>
+            <h5 class="save_btb-title">Save</h5>
+          </div>
+            <!--! save btb  share and more icons container -->
+          <div class="btn_container-share app_flex">
+            <a class="share_btn" href="#" target="_blank"  referrerpolicy="no-referrer"><img  src="./img/share.svg" alt="share btn"></a>
+            <a href="#"><img class="more_btn" src="./img/more.svg" alt="more btn"></a>
           </div>
         </div>
       </div>
-
-
+      
+    
     </div>
     <div class="card-img"><img src="./img/image 4.png" alt=""></div>
     <div class="card-img"><img src="./img/image 13.png" alt=""></div>
