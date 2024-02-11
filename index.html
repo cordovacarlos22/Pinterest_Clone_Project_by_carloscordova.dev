@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -35,6 +36,22 @@
         <a href="#"></a>
         <li class="nav_links" id="create" tabindex="3">Create</li></a>
       </ul>
+      <!-- ! mobile menu  -->
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="toogleMobileMenu()">
+          <li class="nav_links  mobile" id="home"  tabindex="1">Home</li>
+        </a>
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Create</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        
+      </div>
       <!-- ! search input form   -->
       <form class="form_wrapper">
         <input  name="finder" id="finder" class="finder" type="search" placeholder="Search">
@@ -60,7 +77,7 @@
         <div id="arrow_menu">
           <img class="arrow_menu" src="./img/arrow_icon.svg" alt="arrow menu">
         </div>
-        </>
+        </d>
     </nav>
     <!-- <main class="main_container">
       <h1>main container </h1>
@@ -765,7 +782,21 @@ landscape ">
 
   </main>
 
+  <script>
+    const toggleMenu = document.getElementById("myLinks");
 
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function toogleMobileMenu() {
+
+        if (toggleMenu.style.display === "block") {
+          toggleMenu.style.display = "none";
+          console.log(toggleMenu,'click')
+        } else {
+          toggleMenu.style.display = "block";
+        }
+      }
+  </script>
 </body>
 
 </html>
+

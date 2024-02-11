@@ -1,0 +1,42 @@
+/* * mobile menu  */ */
+/* Style the navigation menu */
+.topnav {
+  background-color: var(--text_white);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  flex-wrap: wrap-reverse;
+  background-image: url(./img/arrow-down-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: right;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  width: 100%;
+  border-radius: 24px;
+  background-color: #ddd;
+  color: black;
+}
+  
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}

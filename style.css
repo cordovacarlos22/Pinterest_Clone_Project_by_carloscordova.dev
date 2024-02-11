@@ -55,7 +55,7 @@
   flex-wrap: wrap;
   margin-top: 0.2rem auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
    top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   height: 80px;
@@ -64,12 +64,15 @@
   z-index: 5;
 }
 
+
 #navbar-pinterest {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
-  /* min-width: 1189px; */
+  justify-content: space-evenly;
+ 
   height: 56px;
+  
 }
 
 /*! pinterest logo wrapper */
@@ -132,10 +135,59 @@
   font-size: 16px;
   padding: 0 16px;
 }
+
+/* * mobile menu  */ */
+/* Style the navigation menu */
+.topnav {
+  background-color: var(--text_white);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  flex-wrap: wrap-reverse;
+  background-image: url(./img/arrow-down-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: right;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  background-color: var(--text_white);
+  color: #000;
+  border-radius: 24px;
+  padding: 5px;
+
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  width: 100%;
+  border-radius: 24px;
+  background-color: #ddd;
+  color: black;
+}
+  
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 /* ! form input  finder  wrapper  */
 .form_wrapper {
   display: flex;
-  max-width: 1200px;
+  min-width: 900px;
   height: 48px;
   padding-left: 16px;
 }
@@ -199,9 +251,10 @@
   max-width: 90%;
   margin: 1em auto;
   text-align: center;
+ 
 
   columns: 240px;
-
+  
   padding: 1rem 0;
   margin-top: 6rem;
 }
@@ -294,65 +347,85 @@
 
 /* Extra small devices (phones, 320px and less) */
 @media only screen and (min-width: 320px) {
-    .form_wrapper {
-  
-  min-width: 100px;
-  
+    
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav  {
+  display: block;
 }
-.finder{
-  width: 1px;
+
+.nav_links_wrapper{
+  display: none;
+}
+
+.form_wrapper {
+ 
+  min-width: 120px;
+  
 }
 
 }
 
 /* Small devices (vertical tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .form_wrapper {
+   
+
+.topnav  {
+  display: block;
   
-  margin: 1rem auto;
+}
+.nav_links_wrapper{
+  display: none;
+}
+
+.form_wrapper {
+ 
+  width: 200px;
   
 }
 
-.finder{
-  width: 80%;
-}
 
 }
 
 /* Medium devices (horizontal tablets, 768px and above) */
 @media only screen and (min-width: 768px) {
-    .form_wrapper {
+
+  .topnav  {
+  display: none;
   
-  min-width: 100px;
+}
+    .nav_links_wrapper{
+  display: flex;
+}
+
+
+.form_wrapper {
+ 
+  width: 400px;
   
 }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-    .form_wrapper {
-  
-  min-width: 150px;
+.form_wrapper {
+ 
+  width: 500px;
   
 }
+    
 }
 
 
 @media only screen and (min-width: 1000px) {
-
-  .form_wrapper {
-  
-  min-width: 500px;
+.form_wrapper {
+ 
+  width: 700px;
   
 }
 }
 
 /* Extra large devices (Large laptops and desktops, 1200px and above) */
 @media only screen and (min-width: 1200px) {
-   .form_wrapper {
   
-  min-width: 900px;
-  
-}
 }
